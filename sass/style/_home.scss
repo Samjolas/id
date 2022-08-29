@@ -1,0 +1,8 @@
+@use 'variables' as a;
+
+.card {
+  max-width: 35rem;
+  margin: 1.5rem;
+  border-radius: 2rem;
+  background: a.$color-bg-card;
+}

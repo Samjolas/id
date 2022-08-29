@@ -1,0 +1,67 @@
+@use 'variables' as a;
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+p,
+figure {
+  margin: 0;
+}
+
+/* headings whould be Capitalise */ 
+h1, h2, h3, h4, h5, h6 {
+  text-transform: capitalize;
+  font-size: inherit;
+}
+
+
+/*  default body style */
+body {
+  font-family: a.$ff-main;
+  font-style: normal;
+  font-weight: a.$fw-400;
+  text-rendering: optimizeSpeed;
+  line-height: 1.1;
+  letter-spacing: 0.01em;
+  overflow-x: hidden;
+  background: url(../images/bg-pattern-top.svg) -50% 200% no-repeat, url(../images/bg-pattern-bottom.svg) 125% -175% no-repeat;
+  background-color: a.$color-bg;
+  color: a.$color-sub;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* A elements that don't have a class get default styles */
+a {
+  text-decoration: none;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+html,
+body {
+  font-size: 62.5%;
+}
+/*
+@media screen and (max-width: 375px) {
+  body {
+    background: a.$color-bg url(../images/pattern-background-mobile.svg) no-repeat top;
+  }
+}*/
+
+
+
