@@ -5,4 +5,50 @@
   margin: 1.5rem;
   border-radius: 2rem;
   background: a.$color-bg-card;
+  display: grid;
+  gap: 1.5rem;
+  &__bg {
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+  }
+  &__img {
+    border-radius: 50%;
+    margin: auto;
+    border: .5rem solid a.$color-bg-card;
+    margin-top: -6rem;
+    z-index: 1;
+    isolation: isolate;
+  }
+  &__head {
+    display: flex;
+    justify-content: center;
+    gap: .5rem;
+    font-size: a.$fs-main;
+  }
+  &__name, &__details {
+    font-weight: a.$fw-700;
+    color: a.$color-main;
+  }
+  &__location {
+    text-align: center;
+    font-size: a.$fs-sub;
+  }
+  &__influence {
+    border-top: 1px solid a.$color-line;
+    display: flex;
+    justify-content: space-around;
+  }
+  &__des {
+    display: grid;
+    list-style-type: none;
+    margin: 2rem;
+    text-align: center;
+    gap: .5rem;
+  }
+  &__details {
+    font-size: a.$fs-main;
+  }
+  &__platform {
+    font-size: a.$fs-sub;
+  }
 }

@@ -7,12 +7,9 @@
 }
 
 /* Remove default margin */
-body,
-h1,
-h2,
-p,
-figure {
+* {
   margin: 0;
+  padding: 0;
 }
 
 /* headings whould be Capitalise */ 
